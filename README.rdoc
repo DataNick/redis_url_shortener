@@ -1,0 +1,2 @@
+Followed a tutorial that outlined how to incorporate Redis into a Ruby-Sinatra app.
+https://code.tutsplus.com/tutorials/how-to-build-a-shortlink-app-with-ruby-and-redis--net-20984

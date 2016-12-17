@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ShortLinks with Redis</title>
+</head>
+<body>
+  <h3>ShortLink with Redis</h3>
+
+  <div class="container">
+    <h1>shortlink app</h1>
+    <form method="post">
+        <input type="text" value="<%= h(params[:url]) %>" name="url" id="url" />
+        <input type="submit" value="shorten" id="submit" />
+    </form>
+    <div class="clear"></div>
+    <% if @shortcode %>
+    <div class="result">
+        Your shortened URL is:
+        <a href="http://localhost:4567/<%= @shortcode %>">localhost:4567/<%= @shortcode %></a>
+    </div>
+    <% end %>
+  </div>
+</body>
+</html>
